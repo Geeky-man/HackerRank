@@ -1,19 +1,25 @@
 #include<iostream>
+#include<string>
 #include<iomanip>
 using namespace std;
 int main()
 {
-    double a, b,res,ans;
-    char word[20];
-    cin >> a >> b;
-    res = a + b;
-    cout << fixed;
-    cout << int(res) << endl;
-    ans = b + b;
-    cout << fixed;
-    cout << setprecision(1) << float(ans) << endl;
-    cin >> word;
-    cout << word <<" is the best place to learn and practice coding!";
+    int i = 4;
+    double d = 4.0;
+    string s = "HackerRank ";
 
-    return 0;
+    int i1;
+    double d1;
+    string s1;
+
+    cin>>i1;
+    cin>>d1;
+    cin.get(); //for reading whole line
+    getline(cin,s1);
+    
+
+    cout<<i+i1<<endl;
+    cout<<fixed<<setprecision(1)<<d+d1<<endl;
+    cout<<s+s1<<endl;
+
 }
